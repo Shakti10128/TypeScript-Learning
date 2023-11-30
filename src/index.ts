@@ -8,12 +8,12 @@ let c: number = 123;
 
 
 // 2nd method to decalare a variable with data type
-let nambo = <String>"shakti";
+let nambo = <string>"shakti";
 let num = <number>123;
 // console.log(nambo,num)
 
 // Union data type can hold more than one data type value
-let surname: String|number;
+let surname: string|number;
 surname = "kumar"
 surname = 2134;
 
@@ -32,4 +32,18 @@ const fun = (n:number,m:number):number=>{
 
 // defining the data type of array
 // now empty array can hold only number's not any other's value
+// method 1
 const arr:number[] = [1,2,3];
+
+
+// method 2
+const arr1:Array<string> = ["shakti","kumar","ShaktiKumar"];
+
+arr1.forEach((i)=>{
+    // string will be print with upperCase letter
+    console.log(i.toUpperCase())
+})
+
+
+// Objects in typeScript
+

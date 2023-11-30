@@ -23,4 +23,12 @@ const fun = (n, m) => {
 // ------------- arrays in typeScript ---------------
 // defining the data type of array
 // now empty array can hold only number's not any other's value
+// method 1
 const arr = [1, 2, 3];
+// method 2
+const arr1 = ["shakti", "kumar", "ShaktiKumar"];
+arr1.forEach((i) => {
+    // string will be print with upperCase letter
+    console.log(i.toUpperCase());
+});
+// Objects in typeScript
