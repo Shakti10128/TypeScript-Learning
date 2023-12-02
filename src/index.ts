@@ -39,11 +39,46 @@ const arr:number[] = [1,2,3];
 // method 2
 const arr1:Array<string> = ["shakti","kumar","ShaktiKumar"];
 
-arr1.forEach((i)=>{
-    // string will be print with upperCase letter
-    console.log(i.toUpperCase())
-})
+// arr1.forEach((i)=>{
+//     // string will be print with upperCase letter
+//     console.log(i.toUpperCase())
+// })
 
 
-// Objects in typeScript
+// ************************************* Objects in typeScript **************************************
+interface Obj {
+    surname:string,
+    age:number
+}
 
+interface newObj extends Obj {
+    gender:string
+}
+
+const obj1:newObj = {
+    surname:"kumar",
+    age:24,
+    gender:"male"
+}
+console.log(obj1)
+
+const obj:Obj = {
+    surname:"ashu",
+    age:24
+}
+
+// console.log(obj)
+
+
+
+//  ************************************** funtion in typescript ******************************************
+
+// l is optional in function
+type Func = (a:number,b:number,l?:number) => number
+
+// we have assigned default value to l if user don't provide the value
+const func:Func = (a,b,l = 1)=>{
+    return a * b  * l
+}
+
+console.log(func(3,4))

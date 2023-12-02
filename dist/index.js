@@ -27,8 +27,18 @@ const fun = (n, m) => {
 const arr = [1, 2, 3];
 // method 2
 const arr1 = ["shakti", "kumar", "ShaktiKumar"];
-arr1.forEach((i) => {
-    // string will be print with upperCase letter
-    console.log(i.toUpperCase());
-});
-// Objects in typeScript
+const obj1 = {
+    surname: "kumar",
+    age: 24,
+    gender: "male"
+};
+console.log(obj1);
+const obj = {
+    surname: "ashu",
+    age: 24
+};
+// we have assigned default value to l if user don't provide the value
+const func = (a, b, l = 1) => {
+    return a * b * l;
+};
+console.log(func(3, 4));
